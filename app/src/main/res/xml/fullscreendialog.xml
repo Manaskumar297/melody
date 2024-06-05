@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style name="FullScreenDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+    <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
+    <item name="android:windowAnimationStyle">@style/FullScreenDialogAnimation</item>
+</style>
+

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".java.fragments.HomeFragment"
+    android:background="@color/transparent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="music library"
+            android:textAlignment="center"
+            android:textColor="@color/d_blue"
+            android:textSize="30dp" />
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:queryBackground="@color/white" />
+
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/d_blue"
+    android:layout_marginTop="50dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/music_library"
+            android:layout_width="match_parent"
+            android:layout_height="742dp"
+           android:layout_above="@+id/deltaRelative"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <RelativeLayout
+            android:id="@+id/deltaRelative"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:paddingBottom="57dp"
+            android:background="@drawable/cardview_back">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/play_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:paddingTop="10dp"
+                android:backgroundTint="@color/transparent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CardView"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="8dp">
+
+
+                        <TextView
+                            android:id="@+id/audio_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:maxLines="1"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+
+
+                        <SeekBar
+                            android:id="@+id/seek_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:progressBackgroundTint="@color/white"
+                            android:progressTint="@color/white" />
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/baseline_repeat_24" />
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="60dp" />
+
+                        <ImageButton
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/baseline_keyboard_arrow_left_24" />
+
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/play_btn"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:backgroundTint="@color/transparent"
+                            android:clickable="true"
+                            android:src="@drawable/play_btn" />
+
+                        <Space
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageButton
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/baseline_keyboard_arrow_right_24" />
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="60dp" />
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/baseline_favorite_border_24" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

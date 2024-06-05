@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".java.Activities.Start"
+    android:background="@color/start_back">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/start_back" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/music_note"
+        android:layout_marginTop="150dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Melody"
+        android:textColor="@color/l_pink"
+        android:textSize="70dp" />
+
+    <TextView
+        android:layout_width="372dp"
+        android:layout_height="215dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="220dp"
+        android:fontFamily="sans-serif-black"
+        android:text="The beat of Music"
+        android:textSize="90dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="0dp"
+        android:padding="40dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="299dp"
+            android:layout_height="124dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="listen to"
+                android:textColor="@color/l_cyan"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="amazing music arround"
+                android:textColor="@color/l_cyan"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The World"
+                android:textColor="@color/l_cyan"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="0dp"
+            app:cardElevation="20dp"
+            app:cardPreventCornerOverlap="true"
+            android:backgroundTint="@color/l_cyan"
+            app:cardCornerRadius="40dp">
+            <ImageButton
+                android:id="@+id/go_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                android:background="@color/l_cyan"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</RelativeLayout>

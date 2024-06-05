@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="15dp"
+
+    android:layout_gravity="center"
+   android:background="@color/light_Purple_Blue">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_arrow_down_24"/>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:text="Now playing"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:padding="10dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_queue_music_24"/>
+    </LinearLayout>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:src="@drawable/baseline_image_24"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+    <SeekBar
+        android:id="@+id/dialog_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_file_download_24"/>
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:text="namen of the song"
+            android:textSize="24sp"
+            android:textAlignment="center" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_favorite_border_24"/>
+    </LinearLayout>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/baseline_keyboard_arrow_left_24"/>
+<Space
+    android:layout_width="20dp"
+    android:layout_height="60dp"/>
+    <ImageButton
+        android:id="@+id/dialog_playbtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/play_btn"/>
+    <Space
+    android:layout_width="20dp"
+    android:layout_height="60dp"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/baseline_keyboard_arrow_right_24"/>
+
+</LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
